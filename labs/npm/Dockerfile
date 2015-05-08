@@ -3,7 +3,7 @@ MAINTAINER Huei-Horng Yo <hiroshiyui@ecoworkinc.com>
 
 ENV DEBIAN_FRONTEND=noninteractive TERM=xterm-256color
 
-RUN apt-get update && apt-get install -y locales curl tmux && apt-get clean
+RUN apt-get update && apt-get install -y locales curl git tmux && apt-get clean
 
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && locale-gen
 ENV LANG=en_US.UTF-8
