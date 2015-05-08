@@ -16,7 +16,6 @@ RUN npm config set loglevel verbose --global
 
 RUN npm install -g bower
 RUN npm install -g ember-cli
-RUN npm install -g watchman
 RUN npm install -g typescript
 
 ADD index.js /root/
